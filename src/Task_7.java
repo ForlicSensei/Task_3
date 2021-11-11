@@ -3,8 +3,10 @@ public class Task_7 {
         System.out.println(isKaprekar(297));
     }
     public static boolean isKaprekar(int number){
-        if(number==1 || number==0)
+        if (number == 1 || number==0)
             return true;
+        if (number <= 3)
+            return false;
         StringBuilder sl = new StringBuilder();
         StringBuilder sr = new StringBuilder();
         String s1=String.valueOf(number*number);
